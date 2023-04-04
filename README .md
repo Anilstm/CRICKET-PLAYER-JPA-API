@@ -1,4 +1,4 @@
-Given five files,
+Contained Five files,
 
 - `PlayerController.java`
 - `PlayerRepository.java`
@@ -6,7 +6,7 @@ Given five files,
 - `PlayerJpaRepository.java`
 - `Player.java`
 
-And also given a database file `cricketteam` which contains `TEAM` table.
+Contains a database file `cricketteam` which contains `TEAM` table.
 
 #### TEAM Table
 
@@ -17,15 +17,8 @@ And also given a database file `cricketteam` which contains `TEAM` table.
 | jerseyNumber | INTEGER |
 |     role     |  TEXT   |
 
-<MultiLineNote>
 
-Use only `team` as the table name in both query writing and in the model class within your code.
-
-</MultiLineNote>
-
-### Completion Instructions
-
-- `Player.java`: The `Player` class should contain the following attributes.
+- `Player.java`: The `Player` class  contains the following attributes.
 
     |  Attribute   |  Type  |
     | :----------: | :----: |
@@ -34,13 +27,13 @@ Use only `team` as the table name in both query writing and in the model class w
     | jerseyNumber |  int   |
     |     role     | String |
 
-- `PlayerRepository.java`: Create an `interface` containing the required methods.
-- `PlayerJpaService.java`: Update the service class with logic for managing player data.
-- `PlayerController.java`: Create the controller class to handle HTTP requests.
-- `PlayerJpaRepository.java`: Create an interface that implements the `JpaRepository` interface.
+- `PlayerRepository.java`: Creates an `interface` containing the required methods.
+- `PlayerJpaService.java`: Updates the service class with logic for managing player data.
+- `PlayerController.java`: Creates the controller class to handle HTTP requests.
+- `PlayerJpaRepository.java`: Creates an interface that implements the `JpaRepository` interface.
   
 
-Implement the following APIs.
+Implemented the following APIs.
 
 ### API 1
 
@@ -161,10 +154,3 @@ If the given `playerId` is not found in the `team`, raise `ResponseStatusExcepti
 
 Deletes a player from the team  based on the `playerId`.
 If the given `playerId` is not found in the `team`, raise `ResponseStatusException` with `HttpStatus.NOT_FOUND`. 
-
-
-**Do not modify the code in `PlayerApplication.java`**
-
-**Do not  modify anything in the `application.properties` file**
-
-**Do not add any SQL files**
